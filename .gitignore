@@ -1,0 +1,3 @@
+certs/*
+public/videos/*
+routes/index.js

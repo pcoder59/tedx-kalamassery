@@ -1,0 +1,63 @@
+<header>
+    <h1 class="login-head"><span class="ted-color">TEDx</span>KALAMASSERY</h1>
+</header>
+
+{{#if error}}
+<h2>Error!!! Please Check Your Details!!!</h2>
+<p>Password Must be At Least 6 Characters</p>
+<p>Check Your Email and Password!</p>
+{{/if}}
+
+<section class="main">
+    <section class="regform">
+        <section class="login">
+            <h2 class="login-head1">Benefits</h2>
+            <ul class="payment-list">
+                <li>High definition access to the full archive of the TEDxKalamassery 2021 conference.</li>
+                <li>For personal use only.</li>
+                <li>Content will become available on December 5, 2021.</li>
+            </ul>
+        </section>
+        <section class="register">
+            <h2 class="login-head1">REGISTER</h2>
+            <form class="signup-form" action="/signup" method="POST">
+                <p class="member">Fill in the details to sign up and enjoy streaming services...</p>
+                <div class="form-field">
+                    <label for="name" class="regform-label">Name:</label>
+                    <input type="text" name="name" class="regform-input name-input" required>
+                </div>
+                <div class="form-field">
+                    <label for="email" class="regform-label">Email:</label>
+                    <input type="email" name="email" class="regform-input email-reg-input" required>
+                </div>
+                <div class="form-field">
+                    <label for="password" class="regform-label">New Password:</label>
+                    <input type="password" name="password" class="regform-input password-reg-input" required>
+                </div>
+                <div class="form-field">
+                    <label for="phone" class="regform-label">Phone No:</label>
+                    <input type="phone" name="phone" class="regform-input phone-input" required>
+                </div>
+                <div class="form-field">
+                    <label for="profession" class="regform-label">Profession:</label>
+                    <input type="text" name="profession" class="regform-input profession-input" required>
+                </div>
+                <div class="form-field">
+                    <label for="city" class="regform-label">City:</label>
+                    <input type="text" name="city" class="regform-input city-input" required>
+                </div>
+                <div class="form-field">
+                    <label for="code" class="regform-label">Reference Code:<br>(If any)</label>
+                    <input type="text" name="code" class="regform-input code-input">
+                </div>
+                <div class="form-field">
+                    <button class="registerbutton">REGISTER</button>
+                </div>
+            </form>
+        </section>
+    </section>
+    <section class="footer">
+        <p class="privacy-share">Your details will not be shared with any third party.By Login/Registering, you agree to our <a href="#" class="privacy-policy">Privacy Policies.</a></p>
+        <img src="/images/vector.png" alt="vector image for style" class="vector-style">
+    </section>
+</section>

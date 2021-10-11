@@ -1,0 +1,66 @@
+<header class="adminHead">
+    <h1>ADMIN</h1>
+</header>
+
+<nav class="adminNav">
+    <ul>
+        <li onclick="displayCodes()">Codes</li>
+        <li onclick="displayAttend()">Attendee List</li>
+    </ul>
+</nav>
+
+<div class="codes">
+    <a href="/genCode"><button class="codeGen">Generate Code</button></a>
+    <h2>Generated Codes</h2>
+    <table class="codeTable">
+        <thead>
+            <tr>
+                <td>Code No.</td>
+                <td>Code</td>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each code}}
+            <tr>
+                <td>{{@index}}</td>
+                <td>{{code}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
+
+<div class="attend">
+    <table class="attendTable">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Email</td>
+                <td>Ticket Type</td>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each userReg}}
+            <tr>
+                <td>{{name}}</td>
+                <td>{{email}}</td>
+                <td>{{ticketType}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    function displayCodes() {
+        $(".codes").show()
+        $(".attend").hide()
+    }
+
+    function displayAttend() {
+        $(".codes").hide()
+        $(".attend").show()
+    }
+</script>

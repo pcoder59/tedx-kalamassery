@@ -1,0 +1,35 @@
+<header>
+    <h1 class="login-head"><span class="ted-color">TEDx</span>KALAMASSERY</h1>
+</header>
+
+{{#if error}}
+<h2>Error!!! Please Check Your Details!!!</h2>
+<p>Password Must be At Least 6 Characters</p>
+<p>Check Your Email and Password!</p>
+{{/if}}
+
+<section class="main">
+    <section class="regform">
+        <section class="login">
+            <h2 class="login-head1">LOGIN</h2>
+            <form class="login-form" action="/loginsubmit" method="POST">
+                <p class="member"><a href="/register">Not a member? Register Here...</a></p>
+                <div class="form-field">
+                    <label for="email" class="regform-label">Email:</label>
+                    <input type="email" name="email" class="regform-input email-input" required>
+                </div>
+                <div class="form-field"></div>
+                    <label for="password" class="regform-label">Password:</label>
+                    <input type="password" name="password" class="regform-input password-input" required>
+                </div>
+                <div class="form-field">
+                    <button class="loginbutton" type="submit">LOGIN</button>
+                </div>
+            </form>
+        </section>
+    </section>
+    <section class="footer">
+        <p class="privacy-share">Your details will not be shared with any third party.By Login/Registering, you agree to our <a href="#" class="privacy-policy">Privacy Policies.</a></p>
+        <img src="/images/vector.png" alt="vector image for style" class="vector-style">
+    </section>
+</section>
