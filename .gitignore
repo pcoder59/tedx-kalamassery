@@ -1,3 +1,4 @@
 certs/*
 public/videos/*
 routes/index.js
+bin/www
