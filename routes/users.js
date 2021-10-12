@@ -49,10 +49,10 @@ router.post('/signup', [check('name').isLength({min: 1}).withMessage("Name is Re
         text: "Yo! first of all congratulations for having absolutely amazing taste in life, and we are here to fill the bill for the connoisseur before us. We are mirthful to have you with us, and we just know that this journey is going to make a hit and will be very 'delicious' for the seeker in you, Lessgo..!\nStay tuned bestie! Welcome to the clan.\nDo check out our Brochure to get more insights.",
         attachments: [
           {
-            path: "/attachments/logo.jpeg"
+            path: "~/ted_my/public/attachments/logo.jpeg"
           },
           {
-            path: "/attachments/brochure.pdf"
+            path: "~/ted_my/public/attachments/brochure.pdf"
           }
         ]
       }
