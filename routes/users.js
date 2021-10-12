@@ -42,9 +42,7 @@ router.post('/signup', [check('name').isLength({min: 1}).withMessage("Name is Re
     userhelper.addUser(req.body, (result) => {
       req.session.loggedIn = true;
       req.session.email = req.body.email;	
-      console.log("Here");
-      res.redirect("/payment");
-      /*var mailOptions = {
+      var mailOptions = {
         from: "event.tedkochi@gmail.com",
         to: req.body.email,
         subject: "Look who We hooked in!!",
@@ -65,7 +63,7 @@ router.post('/signup', [check('name').isLength({min: 1}).withMessage("Name is Re
         } else {
           res.redirect('/payment');
         }
-      });*/
+      });
     });
   }
 });
