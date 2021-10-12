@@ -2,10 +2,10 @@
 <nav id="nav">
     <ul>
         <section class="general">
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#theme">THEME</a></li>
-            <li><a href="#speakers">TALK AND SPEAKERS</a></li>
-            <li><a href="#partners">PARTNERS</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/theme">THEME</a></li>
+            <li><a href="/speakers">TALK AND SPEAKERS</a></li>
+            <li><a href="/partners">PARTNERS</a></li>
             <li><a href="/team">TEAM</a></li>
             <li><a href="/logout">LOGOUT</a></li>
         </section>
@@ -26,18 +26,4 @@
             x.style.display = "none";
         }
     }
-
-    $("#nav").on('click', 'a', function(event) {
-        if(this.href != "https://tedxkalamassery.com/login") {
-            if(this.href != "https://tedxkalamassery.com/payment") {
-                if(this.href != "https://tedxkalamassery.com/logout") {
-                    if(this.href != "https://localhost:3000/team") {
-                        event.preventDefault();
-                        var element = $(this.hash).offset().top;
-                        $('html,body').animate({scrollTop: element});
-                    }
-                }
-            }
-        }
-    })
 </script>

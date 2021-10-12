@@ -2,14 +2,14 @@
 <nav id="nav">
     <ul>
         <section class="general">
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#theme">THEME</a></li>
-            <li><a href="#speakers">TALK AND SPEAKERS</a></li>
-            <li><a href="#partners">PARTNERS</a></li>
-            <li><a href="#">ADMIN</a></li>
+            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/theme">THEME</a></li>
+            <li><a href="/speakers">TALK AND SPEAKERS</a></li>
+            <li><a href="/partners">PARTNERS</a></li>
+            <li><a href="/admin">ADMIN</a></li>
         </section>
         <section class="stream-btn">
-            <li><a href="#" class="stream">STREAM</a></li>
+            <li><a href="/payment" class="stream">STREAM</a></li>
         </section>
     </ul>
 </nav>
@@ -22,6 +22,5 @@
         } else {
             x.style.display = "none";
         }
-    }
-    $("#nav").on('click', 'a', function(event) {                                                                                if(this.href != "https://localhost:3000/login") {                                                                           if(this.href != "https://localhost:3000/payment") {                                                                         if(this.href != "https://localhost:3000/logout") {                                                                          if(this.href != "https://localhost:3000/team") {                                                                            event.preventDefault();                                                                                                 var element = $(this.hash).offset().top;                                                                                $('html,body').animate({scrollTop: element});                                                                       }                                                                                                                   }                                                                                                                   }                                                                                                                   }                                                                                                                   })
+    }                                                                                                              })
 </script>

@@ -1,0 +1,19 @@
+<header>
+    {{>default-header}}
+</header>
+
+<section class="container">
+    <section class="contact">
+        <h2 class="contact-head"><span class="dashes">____________</span>CONTACT US</h2>
+        <h3 class="contact-sub"><span class="ted-color">TEDx</span>KALAMASSERY</h3>
+        <p class="contact-body">Let's get in touch...</p>
+        <form action="/contact" method="POST" class="contact-form">
+            <input type="text" class="textio" placeholder="Name" name="name" required>
+            <input type="email" class="textio" placeholder="Email" name="email" required>
+            <input type="tel" class="textio" placeholder="Phone Number" pattern="[0-9]{10}" name="phone" required>
+            <textarea class="textareaio" name="message">Message</textarea>
+            <p class="privacy">Your details will not be shared with any third party. <a href="#">Privacy Policy</a></p>
+            <input class="button" type="submit" value="Submit">
+        </form>
+    </section>
+</section>
